@@ -1,5 +1,5 @@
 {
-  "name": "travelManage",
+  "name": "BloggerManage",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -55,15 +55,9 @@
     "webpack-dev-server": "1.14.1"
   },
   "scripts": {
-    "dev": "BUILD_ENV=dev webpack-dev-server --inline --hot -d --port 8890",
-    "sit": "BUILD_ENV=sit webpack-dev-server --inline --hot -d --port 8890",
-    "uat": "BUILD_ENV=uat webpack-dev-server --inline --hot -d --port 8890",
-    "pro": "BUILD_ENV=pro webpack-dev-server --inline --hot -d --port 8890",
-    "buildsit": "cross-env BUILD_ENV=sit gulp build",
-    "builduat": "cross-env BUILD_ENV=uat gulp build",
-    "buildpro": "cross-env BUILD_ENV=pro gulp build",
-    "packagesit": "BUILD_ENV=sit webpack --progress && cd output && jar -cf travelManage.war .",
-    "packageuat": "BUILD_ENV=uat webpack --progress && cd output && jar -cf travelManage.war .",
-    "packagepro": "BUILD_ENV=pro webpack --progress && cd output && jar -cf travelManage.war ."
+    "dev": "set BUILD_ENV=dev webpack-dev-server --inline --hot -d --port 8990",
+    "pro": "set BUILD_ENV=pro webpack-dev-server --inline --hot -d --port 8990",
+    "buildpro": "cross-env set BUILD_ENV=pro gulp build",
+    "build": "set BUILD_ENV=pro webpack --progress && cd output && jar -cf bloggerManager.war ."
   }
 }
