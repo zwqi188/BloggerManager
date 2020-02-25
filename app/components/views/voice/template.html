@@ -1,0 +1,14 @@
+<div class="msgView">
+    <audio class="audio-dismiss" id="audioPlayer" onended="voiceEnd()"></audio>
+    <div class="msg-area" ng-repeat="item in Voice.msgList">
+        <span class="msg-item msg-text" ng-if="item.type === 'text'" ng-bind="item.content"></span>
+        <img class="msg-item msg-img" ng-if="item.type === 'image'" ng-src="{{item.imgUrl}}"/>
+        <div class="msg-item msg-voice"
+             ng-style="{width:item.time +50}"
+             ng-if="item.type === 'voice'"
+             ng-click="Voice.playAndPause(item.voiceUrl, item.msgId)"
+             ng-class="{'voice-active':activeMsgId === item.msgId}">
+            <span>{{item.time}}"</span>
+        </div>
+    </div>
+</div>

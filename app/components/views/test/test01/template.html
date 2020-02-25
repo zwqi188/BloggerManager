@@ -1,0 +1,29 @@
+<div class="test01View">
+   <ul id="sortable">
+      <li class="ui-state-default" ng-repeat="item in menuList" ng-mouseup="keyup($index)">{{item}}</li>
+   </ul>
+   <button type="submit" class="btn btn-primary" ng-click="print(menuList)">查看</button>
+   <ul>
+      <li id="draggable01" class="ui-state-highlight">请拖拽我01</li>
+   </ul>
+   <ul>
+      <li id="draggable02" class="ui-state-highlight">请拖拽我02</li>
+   </ul>
+   <ul>
+      <li id="draggable03" class="ui-state-highlight">请拖拽我03</li>
+   </ul>
+   <ul>
+      <li id="draggable04" class="ui-state-highlight">请拖拽我04</li>
+   </ul>
+</div>
+<script>
+    $(function() {
+        $( "#sortable" ).sortable({
+            revert: true
+        });
+    });
+    $( "#draggable01" ).draggable({
+        connectToSortable: "#sortable",
+        revert: "invalid"
+    });
+</script>

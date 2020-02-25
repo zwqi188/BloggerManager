@@ -1,0 +1,138 @@
+{
+  "respCode": "1000",
+  "data": [
+    {
+      "MenuId": 1001,
+      "MenuName": "用户管理",
+      "MenuUri": "user",
+      "MenuThumbnail": "fa-list-alt",
+      "MenuOrder": 1,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100101,
+          "MenuName": "注册用户管理",
+          "MenuUri": "user.regUserManager",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    },
+    {
+      "MenuId": 1002,
+      "MenuName": "景点管理",
+      "MenuUri": "spot",
+      "MenuThumbnail": "fa-dot-circle-o",
+      "MenuOrder": 2,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100201,
+          "MenuName": "新增景点",
+          "MenuUri": "spot.addSpot",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        },
+        {
+          "MenuId": 100202,
+          "MenuName": "编辑景点",
+          "MenuUri": "spot.editSpot",
+          "MenuThumbnail": "",
+          "MenuOrder": 2,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    },
+    {
+      "MenuId": 1003,
+      "MenuName": "订单管理",
+      "MenuUri": "order",
+      "MenuThumbnail": "fa-dot-circle-o",
+      "MenuOrder": 3,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100301,
+          "MenuName": "普通订单管理",
+          "MenuUri": "order.payConfig",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        },
+        {
+          "MenuId": 100302,
+          "MenuName": "团购订单管理",
+          "MenuUri": "order.payConfig",
+          "MenuThumbnail": "",
+          "MenuOrder": 2,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    },
+    {
+      "MenuId": 1004,
+      "MenuName": "评论管理",
+      "MenuUri": "commont",
+      "MenuThumbnail": "fa-dot-circle-o",
+      "MenuOrder": 4,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100401,
+          "MenuName": "景点评论",
+          "MenuUri": "commont.payConfig",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    },
+    {
+      "MenuId": 1005,
+      "MenuName": "菜单管理",
+      "MenuUri": "menu",
+      "MenuThumbnail": "fa-dot-circle-o",
+      "MenuOrder": 5,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100501,
+          "MenuName": "菜单配置管理",
+          "MenuUri": "menu.menuConfig",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    },
+    {
+      "MenuId": 1006,
+      "MenuName": "测试管理",
+      "MenuUri": "test",
+      "MenuThumbnail": "fa-dot-circle-o",
+      "MenuOrder": 6,
+      "IsLeaf": false,
+      "SubMenus": [
+        {
+          "MenuId": 100601,
+          "MenuName": "测试demo01",
+          "MenuUri": "test.test01",
+          "MenuThumbnail": "",
+          "MenuOrder": 1,
+          "IsLeaf": true,
+          "SubMenus": []
+        }
+      ]
+    }
+  ],
+  "respMsg": "成功"
+}

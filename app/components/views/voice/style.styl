@@ -1,0 +1,44 @@
+@import "../../common/stylus/constants"
+
+.msgView
+    width 500px
+    margin 20px auto
+    height 600px
+    border 3px solid #00A000
+    border-radius 5px
+    background-color #D7D8DA
+    displayFlex()
+    adaptiveWrap(flex-direction, column)
+    padding 20px
+    .audio-dismiss
+        width 0
+        height 0
+        display none
+    .msg-area:nth-child(2n-1)
+        adaptiveWrap(align-self , start)
+    .msg-area:nth-child(2n)
+        adaptiveWrap(align-self , flex-end)
+    .msg-area
+        margin-bottom 10px
+        .msg-item
+            border 1px solid #00A000
+            border-radius 3px
+            background-color #eeeeee
+        .msg-text
+            padding 5px 5px
+        .msg-img
+            padding 0 10px
+            max-width 160px
+            max-height 100px
+        .msg-voice
+            height 30px
+            line-height 30px
+            max-width 200px
+            text-align right
+            padding-left 35px
+            padding-right 5px
+            background: url("res/voice.png") no-repeat 5px center;
+            background-size: 20px 20px;
+        .voice-active
+            background: url("res/voice.gif") no-repeat left center;
+            background-size: 30px 30px;

@@ -1,0 +1,58 @@
+@import "../../common/stylus/constants"
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  -webkit-user-select text /*禁止用户长按复制 - webkit浏览器*/
+  -moz-user-select text/*火狐*/
+  -ms-user-select text /*IE10*/
+  user-select text
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)/*取消ios点击clickable元素背景高亮*/
+
+//适配不同分辨率 参照常用机型分辨率
+@media screen and (max-width: 10px)
+  html
+    font-size 12px !important
+
+@media screen and (min-width: 10px) and (max-width: 320px)
+  html
+    font-size 12px !important
+
+@media screen and (min-width: 321px) and (max-width: 375px)
+  html
+    font-size 14px !important
+
+@media screen and (min-width: 376px)and (max-width: 435px)
+  html
+    font-size 16px !important
+
+@media screen and (min-width: 436px) and (max-width: 600px)
+  html
+    font-size 18px !important
+
+@media screen and (min-width: 601px) and (max-width: 700px)
+  html
+    font-size 20px !important
+
+@media screen and (min-width: 701px) and (max-width: 1080px)
+  html
+    font-size 24px !important
+
+html
+body
+  font-family "Microsoft YaHei", sans-serif
+  color #222
+  margin 0
+  padding 0
+  height 100%
+  width 100%
+
+.clearFix:after//用于浮动元素的父元素。若引入bootstrap，直接使用clearfix类就可
+  content "."
+  display block
+  height 0
+  clear both
+  visibility hidden

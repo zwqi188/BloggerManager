@@ -1,0 +1,16 @@
+{
+  "respCode": "1000",
+  "respMsg": "成功",
+  "data": [{
+    "id": 14,
+    "userName": "张三",
+    "password": "e10adc3949ba59abbe56e057f20f883e",
+    "mobile": "18888888888",
+    "createdAt": "Mar 16, 2019 4:31:49 PM",
+    "updatedAt": "Mar 23, 2019 12:27:48 PM",
+    "nickName": "大帅哥",
+    "address": "{\"province\":\"内蒙古\",\"city\":\"通辽\",\"area\":\"奈曼旗\",\"detail\":\"hg\"}",
+    "idCard": "67899798",
+    "state": "有效"
+  }]
+}

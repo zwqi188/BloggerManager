@@ -1,0 +1,36 @@
+<div class="tree-view">
+    <ul id="menu" class="menuTree">
+        <li class="allMenu"><span class="fa fa-list-alt" ng-click="getMenuListByParentId(0)"></span>
+            菜单列表
+            <span class="fa fa-plus" ng-click="canAddMainMenu()"></span>
+            <ul>
+                <li ng-repeat="item in menuList"><span class="folder fa fa-folder-open"> {{item.MenuName}}</span>
+                    <span class="fa fa-plus" ng-click="canAdd(item)"></span>
+                    <span class="fa fa-minus" ng-click="deleteById(item)"></span>
+                    <ul>
+                        <li ng-repeat="subItem in item.SubMenus">
+                            <span class="file fa fa-file-o"> {{subItem.MenuName}}</span>
+                            <span class="fa fa-minus" ng-click="deleteById(subItem.Id)"></span>
+                        </li>
+                        <li ng-if="item.canAdd">
+                            <span class="file">
+                            <input type="text" ng-model="item.menuName" placeholder="菜单名称">
+                            <input type="text" ng-model="item.menuIcon" placeholder="菜单图标">
+                            <input type="text" ng-model="item.menuUrl" placeholder="菜单地址">
+                            </span>
+                            <span class="fa fa-check" ng-click="addMenu(item)"></span>
+                            <span class="fa fa-times" ng-click="cancelAdd(item)"></span></li>
+                    </ul>
+                </li>
+                <li ng-if="canMainMenu">
+                    <span class="folder">
+                    <input type="text" ng-model="mainMenu.mainMemuName" placeholder="菜单名称">
+                    <input type="text" ng-model="mainMenu.mainMemuIcon" placeholder="菜单图标">
+                    <input type="text" ng-model="mainMenu.mainMemuUrl" placeholder="菜单地址">
+                    </span>
+                    <span class="fa fa-check" ng-click="addMainMenu(mainMenu)"></span>
+                    <span class="fa fa-times" ng-click="cancelAddMainMenu()"></span></li>
+            </ul>
+        </li>
+    </ul>
+</div>

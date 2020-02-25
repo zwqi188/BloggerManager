@@ -1,0 +1,51 @@
+<div class="addSpotView">
+   <form class="form-horizontal" role="form">
+      <div class="form-group">
+         <label class="col-sm-2 control-label">景点名称</label>
+         <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="景点名称" ng-model="spotName">
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label">景点位置</label>
+         <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="景点位置" ng-model="cityId">
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label">价格</label>
+         <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="价格" ng-model="price">
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label">上传图片</label>
+         <div class="col-sm-6">
+           <input type="file">
+         </div>
+         <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary" ng-click="upload()">上传图片</button>
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label"></label>
+         <div class="col-sm-9">
+            <div class="col-sm-3 col-md-3" ng-repeat="item in uploadList"><a href="#" class="thumbnail"><img src="{{imageServe}}manage/getImage.json?imageUrl={{item}}" alt="占位图"><span class="badge closeR" ng-click="cancelUpload($index)">&times;</span></a> </div>
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label"> </label>
+         <div class="col-sm-9">
+            <button type="submit" class="btn btn-primary" ng-click="addSpotToServer()">添加</button>
+         </div>
+      </div>
+      <div class="form-group">
+         <label class="col-sm-2 control-label">景点描述</label>
+      </div>
+      <div class="form-group">
+         <div editor-view></div>
+      </div>
+
+   </form>
+
+</div>

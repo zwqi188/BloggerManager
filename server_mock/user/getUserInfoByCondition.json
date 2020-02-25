@@ -1,0 +1,32 @@
+{
+  "respCode": "1000",
+  "respMsg": "成功",
+  "data": [
+    {
+      "id": "02",
+      "userName": "-1000",
+      "realName": "BonusMall",
+      "mobile": "da93871dd41",
+      "email": "1001",
+      "createdAt": "2017-07-17 16:14:18",
+      "updatedAt": "2017-07-17 16:14:18",
+      "nickName": "37***********23",
+      "gender": "Success",
+      "address":"{\"province\":\"内蒙古\",\"city\":\"通辽\",\"area\":\"奈曼旗\",\"detail\":\"hg\"}",
+      "idCard": "20170717161232-D2M5j8"
+    },
+    {
+      "id": "05",
+      "userName": "00",
+      "realName": "Boall",
+      "mobile": "da9852f50f81",
+      "email": "1001",
+      "createdAt": "2017-07-17 16:14:18",
+      "updatedAt": "2017-07-17 16:14:18",
+      "nickName": "37***23",
+      "gender": "Success",
+      "address":"{\"province\":\"内蒙古\",\"city\":\"通辽\",\"area\":\"奈曼旗\",\"detail\":\"hg\"}",
+      "idCard": "20170717M5j8"
+    }
+  ]
+}

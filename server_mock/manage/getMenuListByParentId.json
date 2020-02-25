@@ -1,0 +1,23 @@
+{
+  "respCode": "1000",
+  "data": [
+    {
+      "id":1,
+      "MenuId": 1001,
+      "menuName": "用户管理",
+      "menuUri": "order",
+      "menuThumbnail": "fa-list-alt",
+      "menuOrder": 1,
+      "isLeaf": false
+    },
+    {
+      "id":2,
+      "MenuId": 1002,
+      "menuName": "景点管理",
+      "menuUri": "payInfo",
+      "menuThumbnail": "fa-dot-circle-o",
+      "menuOrder": 2,
+      "isLeaf": false
+    }],
+  "respMsg": "成功"
+}

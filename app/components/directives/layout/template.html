@@ -1,0 +1,44 @@
+<div class="layout">
+    <header>
+        <div class="top-bar clearFix"  ng-init="getUid()">
+            <div class="top-bar-branch">
+                <i class="fa fa-user-secret " aria-hidden="true"></i>
+                <span>乐游网管理平台</span>
+            </div>
+
+            <div class="top-bar-person">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <span class="person-span">
+                    <span ng-click="login()">{{userId}}&nbsp;&nbsp;</span>|<span ng-click="logout()">&nbsp;&nbsp;退出</span>
+                </span>
+            </div>
+            <!-- Top Nav Start -->
+            <div id='cssmenu'>
+                <ul>
+                    <li ng-repeat="item in data" class=' {{item.MenuUri}} has-sub-{{item.IsLeaf}}'>
+                        <a href='#' ui-sref="{{item.MenuUri}}">
+                            <i class="fa {{item.MenuThumbnail}} "></i>
+                            {{item.MenuName}}
+                        </a>
+                        <ul>
+                            <li ng-repeat="subMenu in item.SubMenus">
+                                <a href='#' ui-sref="{{subMenu.MenuUri}}">{{subMenu.MenuName}}</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Top Nav End -->
+
+        </div>
+
+    </header>
+
+
+    <div class="content">
+        <div class="view" ng-class="{'view-extend': !showSlide}" ui-view></div>
+    </div>
+</div>
+
+

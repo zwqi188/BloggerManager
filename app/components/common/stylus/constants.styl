@@ -1,0 +1,65 @@
+//字体大小类
+$headerFontSize = 1.125rem
+
+//颜色类
+$backgroundColor = #eeeeee
+$buttonColor = #09A0CE
+$borderColor = #dcdcdc
+$themeColor = #00abf3
+
+//大图比例 标准比例 423/1080
+$imageRate = 423 / 1080 * 100%
+
+//flex
+displayFlex()
+  display flex
+  display -webkit-flex
+  display -moz-flex
+
+//适配包装函数
+adaptiveWrap(prop, agrs)
+  -moz-{prop} agrs
+  -webkit-{prop} agrs
+  {prop} agrs
+
+//按比例设置宽高
+setByRatio( ratio)
+  width 100%
+  height 0
+  padding-bottom ratio
+  overflow hidden
+
+//设置元素背景撑满元素
+fullImage(args)
+  background transparent url(args) no-repeat center
+  background-size 100% 100%
+
+.successBtn
+  border none
+  width 100px
+  height 35px;
+  line-height 30px;
+  background-color #24ADF0
+  color white
+  adaptiveWrap(border-radius, 4px)
+  text-align center
+  cursor pointer
+  &:hover
+    background-color #1B98D8
+  &:active
+    background-color #C5D2D8
+
+.cancelBtn
+  width 100px
+  height 30px;
+  line-height 30px;
+  text-align center
+  cursor pointer
+  adaptiveWrap(border-radius, 4px)
+  background-color #F4F5F9
+  border 1px solid #E0E0E0
+  color blue
+  &:hover
+    background-color #D8E0E3
+  &:active
+    background-color #C5D2D8

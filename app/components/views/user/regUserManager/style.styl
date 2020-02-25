@@ -1,0 +1,77 @@
+@import "../../../common/stylus/constants"
+
+body
+  margin 0
+  padding 0
+.regUserManagerView
+  width 80%
+  margin 0 auto 0
+  word-break break-all
+  displayFlex()
+  adaptiveWrap(flex-direction, column)
+  .table-area
+    margin-top 2rem
+    .ng-table
+      text-align center
+      word-break break-all
+      //默认table 5列
+      .td-1
+        width 15%
+      .td-2
+        width 20%
+      .td-3
+        width 20%
+      .td-4
+        width 15%
+      .td-5
+        width 15%
+      .td-6
+        width 15%
+      .filter
+        .input-filter, .filter-select
+          height 30px
+          line-height 30px
+          max-width 200px
+          margin 0 auto
+
+  .paymentdetail-info-result
+    table
+      margin-bottom 10px
+      thead
+        background-color #5A5A67
+        color #FFFFFF
+        tr th
+          padding 8px 0
+          font-weight normal
+      tbody tr td
+        font-size 13px
+        padding 8px 0
+        vertical-align middle
+    table + div
+      height 50px
+      border-bottom 1px solid #DBDBDB
+    #userInfoTable + div
+      display none
+
+
+.modal-content
+  width 120%
+.start-time,.end-time
+  width 140%
+  margin-left -30px
+.start-date,end-date
+  width 100%
+.searchBtn
+  float right
+  width 60%
+.modalTd
+  background #CCCCCC
+  text-align center
+  font-weight bold
+  width 150px
+.modal-dialog
+  width 844px
+.modal-content
+  width 882px
+.modalTdContent
+  word-break break-all

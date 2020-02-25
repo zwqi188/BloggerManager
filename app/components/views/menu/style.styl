@@ -1,0 +1,41 @@
+@import "../../common/stylus/constants"
+.date-time
+
+  .start-time,.end-time
+    width 20%
+    position absolute
+    right  45%
+  .start-date,end-date
+    width 30%
+    float left
+.tableView
+  width 60%
+  margin 0px auto 0
+  displayFlex()
+  adaptiveWrap(flex-direction, column)
+  .table-area
+    margin-top 2rem
+    .ng-table
+      text-align center
+      word-break break-all
+      //默认table 5列
+      .td-1
+        width 15%
+      .td-2
+        width 10%
+      .td-3
+        width 15%
+      .td-4
+        width 10%
+      .td-5
+        width 15%
+      .td-6
+        width 15%
+      .td-7
+        width 15%
+      .filter
+        .input-filter, .filter-select
+          height 30px
+          line-height 30px
+          max-width 200px
+          margin 0 auto
